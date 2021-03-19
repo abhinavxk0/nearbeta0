@@ -6,4 +6,4 @@ client.events = new Discord.Collection();
 ['command_handler', 'event_handler'].forEach(handler => {
     require(`./handlers/${handler}`)(client, Discord);
 });
-client.login('ODE5OTQ3MDQ1MDkxNDA5OTkx.YEuBMQ.nEKeyhoEVl0VGejRpbImoNrDARE');
+client.login(process.env.DJS_TOKEN);
