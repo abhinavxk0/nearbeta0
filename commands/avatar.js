@@ -17,8 +17,8 @@ module.exports = {
         let avatar = user.displayAvatarURL({ size: 4096, dynamic: true });
 
         const avatarEmbed = new Discord.MessageEmbed()
-            .setTitle(`${user.tag}'s Profile Picture`)
-            .setDescription(`[Avatar URL of **${user.tag}**](${avatar})`)
+            .setTitle('Avatar')
+            .setDescription(`[Image](${avatar})`)
             .setColor('D0D5D9')
             .setImage(avatar);
 
